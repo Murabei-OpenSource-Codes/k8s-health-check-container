@@ -1,0 +1,7 @@
+server {
+  listen 80;
+
+  location /${HEALTH_CHECK_PATH} {
+    return 200 'health check ok';
+  }
+}
