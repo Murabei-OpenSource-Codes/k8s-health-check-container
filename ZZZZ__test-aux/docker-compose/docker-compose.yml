@@ -1,0 +1,8 @@
+version: "3.3"
+services:
+  k8s-health-check-container:
+    image: andrebaceti/k8s-health-check-container:0.0.1
+    ports:
+      - "8080:80"
+    environment:
+      - HEALTH_CHECK_PATH=chubaca/
